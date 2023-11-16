@@ -4,7 +4,7 @@ import com.example.application.views.about.AboutView;
 import com.example.application.views.datagrid.DataGridView;
 import com.example.application.views.feed.FeedView;
 import com.example.application.views.helloworld.HelloWorldView;
-import com.example.application.views.imagegallery.ImageGalleryView;
+import com.example.application.views.report.CreateReportFormView;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.html.Footer;
@@ -58,7 +58,8 @@ public class MainLayout extends AppLayout {
         nav.addItem(new SideNavItem("About", AboutView.class, LineAwesomeIcon.FILE.create()));
         nav.addItem(new SideNavItem("Data Grid", DataGridView.class, LineAwesomeIcon.TH_SOLID.create()));
         nav.addItem(new SideNavItem("Feed", FeedView.class, LineAwesomeIcon.LIST_SOLID.create()));
-        nav.addItem(new SideNavItem("Image Gallery", ImageGalleryView.class, LineAwesomeIcon.TH_LIST_SOLID.create()));
+        nav.addItem(new SideNavItem("Layanan Pengaduan", CreateReportFormView.class, LineAwesomeIcon.LIST_SOLID.create()));
+        nav.addItem(new SideNavItem("Login", LoginView.class, LineAwesomeIcon.TH_LIST_SOLID.create()));
 
         return nav;
     }
